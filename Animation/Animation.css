@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100%;
+    width: 200%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.sky,
+.grass,
+.road {
+    position: relative;
+}
+
+.sky {
+    background-color: skyblue;
+    height: 55%;
+}
+
+.air:hover {
+    transition: transform 10s;
+    transform: translate(1200px, -130px);
+}
+
+.cloud {
+    height: 40%;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    opacity: 100%;
+}
+
+.sun {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+}
+
+.grass {
+    height: 5%;
+    width: 200%;
+    background-color: green;
+}
+
+.road {
+    height: 40%;
+    width: 200%;
+    background-color: dimgray;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+    box-sizing: border-box;
+}
+
+.divider {
+    width: 200%;
+    box-sizing: border-box;
+    border: 4px dashed white;
+    position: absolute;
+    top: 50%;
+}
+
+.air {
+    height: 65%;
+    position: absolute;
+}
+
+.air {
+    top: -18%;
+    /* animation-name: driveair; */
+    /* animation-duration: 0s; */
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-timing-function: ease-out; */
+}
+
+
+/*
+@keyframes driveaudi {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(1200px);
+    }
+}*/
